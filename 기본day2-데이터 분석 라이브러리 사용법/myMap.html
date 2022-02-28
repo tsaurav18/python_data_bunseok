@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a7f1683973a54a8c90e3300b2b2cee33 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_a7f1683973a54a8c90e3300b2b2cee33" ></div>
+        
+</body>
+<script>    
+    
+            var map_a7f1683973a54a8c90e3300b2b2cee33 = L.map(
+                "map_a7f1683973a54a8c90e3300b2b2cee33",
+                {
+                    center: [37.551322486229196, 126.98829097095876],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_57df5c595c4b47b2b5e24c382562a27d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a7f1683973a54a8c90e3300b2b2cee33);
+        
+    
+            var marker_38c7017ff7a04538ac82bb96a578d7d9 = L.marker(
+                [37.56666485341711, 126.97841371580368],
+                {}
+            ).addTo(map_a7f1683973a54a8c90e3300b2b2cee33);
+        
+    
+            var icon_287872d9dbe9449ca401d9d2dd3263e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_38c7017ff7a04538ac82bb96a578d7d9.setIcon(icon_287872d9dbe9449ca401d9d2dd3263e9);
+        
+    
+        var popup_a7a5906078eb40d29361223712214b03 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd733bb9c37341d592f43db0ed9e60de = $(`<div id="html_cd733bb9c37341d592f43db0ed9e60de" style="width: 100.0%; height: 100.0%;">서울 시청입니다</div>`)[0];
+            popup_a7a5906078eb40d29361223712214b03.setContent(html_cd733bb9c37341d592f43db0ed9e60de);
+        
+
+        marker_38c7017ff7a04538ac82bb96a578d7d9.bindPopup(popup_a7a5906078eb40d29361223712214b03)
+        ;
+
+        
+    
+    
+            marker_38c7017ff7a04538ac82bb96a578d7d9.bindTooltip(
+                `<div>
+                     서울 시청 마커
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
